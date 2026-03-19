@@ -1,4 +1,4 @@
-@URL = https://g14sh364u1.execute-api.eu-west-1.amazonaws.com/
+@URL = https://bceauu9hb6.execute-api.eu-west-1.amazonaws.com/
 
 
 ### Get all users
@@ -9,14 +9,15 @@ POST {{URL}}/users
 Content-Type: application/json
 
 {
-    "name": "coding addict"
+    "name": "nick",
+    "email": "coding@addict.com"
 }
 
 ### Get a user
-GET {{URL}}/users/1
+GET {{URL}}/users/d096448c-8be7-459a-8351-812fb52dcd25
 
 ### Update a user
-PUT {{URL}}/users/1
+PUT {{URL}}/users/d096448c-8be7-459a-8351-812fb52dcd25
 Content-Type: application/json
 
 {
@@ -25,4 +26,4 @@ Content-Type: application/json
 }
 
 ### Delete a user
-DELETE {{URL}}/users/1
+DELETE {{URL}}/users/ad055d23-324e-4927-b941-10f3c1bb5b4b

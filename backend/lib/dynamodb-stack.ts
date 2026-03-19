@@ -9,7 +9,7 @@ export class DynamoDBStack extends cdk.Stack {
 
     this.usersTable = new cdk.aws_dynamodb.Table(this, 'UsersTable', {
       tableName: `${this.stackName}-users-table`,
-      partitionKey: { name: 'Id', type: cdk.aws_dynamodb.AttributeType.STRING },
+      partitionKey: { name: 'id', type: cdk.aws_dynamodb.AttributeType.STRING },
       billingMode: cdk.aws_dynamodb.BillingMode.PAY_PER_REQUEST,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
