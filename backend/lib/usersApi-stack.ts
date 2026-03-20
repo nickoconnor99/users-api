@@ -37,7 +37,7 @@ export class UsersApiStack extends cdk.Stack {
           apigateway.CorsHttpMethod.PUT,
           apigateway.CorsHttpMethod.DELETE,
         ],
-        allowOrigins: ["*"],
+        allowOrigins: ["https://aws-cdk-users.netlify.app"],
       },
     });
 
